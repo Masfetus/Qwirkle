@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC5B23BB-7E3F-4F50-9C92-73CCF8E70901}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Qwirkle.My.MyApplication</StartupObject>
+    <RootNamespace>Qwirkle</RootNamespace>
+    <AssemblyName>Jeu essai</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>I:\DUT Info\1ère année\Semestre 2\projetTutore_qwirkle\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Jeu essai.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DelaySign>false</DelaySign>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\</OutputPath>
+    <DocumentationFile>Jeu essai.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>80C539918E2C791CEAA281C3CD5496DF16642246</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Base1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone_quirkle.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accueil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil.Designer.vb">
+      <DependentUpon>Accueil.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangementPioche.designer.vb">
+      <DependentUpon>ChangementPioche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangementPioche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixNbJoueurs.Designer.vb">
+      <DependentUpon>ChoixNbJoueurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChoixNbJoueurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixNomJoueurs.Designer.vb">
+      <DependentUpon>ChoixNomJoueurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChoixNomJoueurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classement.designer.vb">
+      <DependentUpon>Classement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Classement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PlateauJeu.Designer.vb">
+      <DependentUpon>PlateauJeu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlateauJeu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regle.Designer.vb">
+      <DependentUpon>Regle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Regle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransitionJoueur.Designer.vb">
+      <DependentUpon>TransitionJoueur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransitionJoueur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangementPioche.resx">
+      <DependentUpon>ChangementPioche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixNbJoueurs.resx">
+      <DependentUpon>ChoixNbJoueurs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixNomJoueurs.resx">
+      <DependentUpon>ChoixNomJoueurs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classement.resx">
+      <DependentUpon>Classement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateauJeu.aa-DJ.resx">
+      <DependentUpon>PlateauJeu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateauJeu.aa-ER.resx">
+      <DependentUpon>PlateauJeu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateauJeu.en.resx">
+      <DependentUpon>PlateauJeu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateauJeu.fr.resx">
+      <DependentUpon>PlateauJeu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateauJeu.resx">
+      <DependentUpon>PlateauJeu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regle.resx">
+      <DependentUpon>Regle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransitionJoueur.resx">
+      <DependentUpon>TransitionJoueur.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgAccueil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgAccueil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qwirkle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnJouerImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSecondaireAccueil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgChoixNbJoueur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgChoixNbJoueur1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgChoixNbJoueur2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnValidNbJoueur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnValidNbJoueur1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnValidNbJoueur2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgRegles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IlluRegle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgChoixNbJoueur3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgCredits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRetour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRetour1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgChoixNomJoueur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgAccueil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgAccueil3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Codes\projet\projet.csproj">
+      <Project>{51e0c26e-4212-4a3f-b8c0-80b413b33373}</Project>
+      <Name>projet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgChangementJoueur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnTransition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgChoixNomJoueur1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgChoixNomJoueur2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\be.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\br.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\je.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\js.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\or.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\os.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ve1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgPioche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgPioche1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicMenuPlateau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontMenuPlateau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontMenuPlateau1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgPioche2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSecondaireAccueil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnValider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnAbandonner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicEchangeTuile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icone_quirkle.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
